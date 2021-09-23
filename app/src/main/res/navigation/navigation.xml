@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/scheduleItemListFragment">
+
+    <fragment
+        android:id="@+id/scheduleItemListFragment"
+        android:name="com.team.sandbox.fragments.ScheduleItemListFragment"
+        android:label="ScheduleItemListFragment" >
+        <action
+            android:id="@+id/action_scheduleItemListFragment_to_error_fragment"
+            app:destination="@id/errorFragment" />
+    </fragment>
+    <fragment android:id="@+id/errorFragment"
+        android:name="com.team.sandbox.fragments.ErrorFragment"
+        android:label="ErrorFragment" >
+    <argument
+        android:name="scheduleItemId"
+        app:argType="long" />
+    </fragment>
+</navigation>

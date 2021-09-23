@@ -1,7 +1,8 @@
-package com.team.sandbox
+package com.team.sandbox.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.team.sandbox.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
